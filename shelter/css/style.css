@@ -1,0 +1,112 @@
+/* === NORMALIZE === */
+
+/* === GLOBAL DEFAULTS === */
+*, *::before, *::after { box-sizing: border-box; }
+button { cursor: pointer; }
+img { 
+    display: block; 
+    max-width: 100%; 
+}
+
+@font-face {
+    font-family: 'Arial';
+    font-style: normal;
+    src: url();
+}
+
+/* === VARIABLES === */
+:root {
+    /* fonts */
+    --font-main: 'Arial', sans-serif;
+    --font-display: 'Georgia', serif;
+
+    /* colors */
+    --color-primary: #F1CDB3;
+    --color-primary-light: #FDDCC4;
+
+    --color-dark-3xl: #292929;
+    --color-dark-2xl: #444444;
+    --color-dark-xl: #4C4C4C;
+    --color-dark-l: #545454;
+    --color-dark-m: #B2B2B2;
+    --color-dark-s: #CDCDCD;
+
+    --color-light-xl: #FFFFFF;
+    --color-light-l: #F6F6F6;
+    --color-light-s: #FAFAFA;
+}
+
+
+/* === BASIC === */
+/* body { 
+
+} */
+.container { 
+    max-width: 1280px; 
+    margin: 0 auto; 
+}
+
+
+/* typography */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+}
+
+p {
+    font-family: var(--font-main);
+}
+
+h1 {
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 57.2px */
+}
+
+h2 {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 45.5px */
+    letter-spacing: 2.1px;
+}
+
+/* h3 {
+
+}
+
+h4 {
+
+} */
+
+.logo__title {
+    font-family: var(--font-display);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 35.2px */
+    letter-spacing: 1.92px;
+}
+
+.logo__subtitle {
+    font-family: var(--font-main);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.3px;
+}
+
+/* === HEADER === */
+/* desktop */
+@media (max-width: 768px) { }
+@media (max-width: 320px) { }
+
+
+/* === FOOTER === */
+/* desktop */
+@media (max-width: 768px) { }
+@media (max-width: 320px) { }
+
+
+/* === КНОПКИ (переиспользуемые) === */
