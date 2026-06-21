@@ -358,3 +358,198 @@
         gap: 90px;
     }
 }
+
+/* === HELP === */
+.help {
+    display: flex;
+    flex-direction: column;
+    padding: 42px 15px;
+}
+
+.help .container {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
+.help h2 {
+    color: var(--color-dark-l);
+    text-align: center;
+}
+
+.help__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 0 5px;
+}
+
+.help__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex: 0 0 calc((100% - 30px) / 2);
+}
+
+.help__label {
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: 0.9px;
+    color: var(--color-dark-l);
+}
+
+.help__icon {
+    width: 60px;
+    height: 60px;
+}
+
+@media (min-width: 768px) {
+    .help {
+        padding: 80px 69px 100px 69px;
+    }
+
+    .help .container {
+        gap: 60px;
+    }
+
+    .help__list {
+        gap: 60px;
+        justify-content: center;
+    }
+
+    .help__item {
+        flex: 0 0 calc((100% - 60px * 2) / 3);
+    }
+}
+
+@media (min-width: 1280px) {
+    .help {
+        padding: 80px 40px 100px 40px;
+    }
+
+    .help__list {
+        gap: 120px;
+    }
+
+    .help__item {
+        flex: 0 0 calc((100% - 120px * 4) / 5);
+    }
+}
+
+
+/* === DONATION === */
+.donation {
+    background-color: var(--color-light-l);
+    padding-top: 42px;
+    padding-bottom: 42px;
+}
+
+.donation .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 42px;
+}
+
+.donation__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+    max-width: 320px;
+}
+
+.donation__content h2 {
+    color: var(--color-dark-l);
+    text-align: center;
+}
+
+.donation__subtitle {
+    color: var(--color-dark-l);
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.donation__card-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: var(--color-primary);
+    border-radius: 9px;
+}
+
+.card__icon {
+    width: 30px;
+    height: 23px;
+    fill: var(--color-dark-3xl);
+}
+
+.card__number {
+    color: var(--color-dark-l);
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: 0.9px;
+}
+
+.text-legal {
+    color: var(--color-dark-m);
+    text-align: justify;
+}
+
+.donation__image {
+    max-width: 260px;
+    max-height: 136px;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .donation {
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+
+    .donation .container {
+        gap: 60px;
+    }
+
+    .donation__content {
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .donation__content h2,
+    .donation__content span {
+        text-align: left;
+    }
+
+    .donation__image {
+        max-width: 505px;
+        max-height: 261px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .donation .container {
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px;
+    }
+}

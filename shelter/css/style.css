@@ -48,8 +48,9 @@ section {
 
 .container {
     width: 100%;
-    /* max-width: 1280px; */
+    max-width: 1280px;
     padding: 0 10px;
+    margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -257,12 +258,6 @@ a {
 }
 
 
-/* === FOOTER === */
-/* === desktop === */
-@media (min-width: 768px) { }
-@media (min-width: 1280px) { }
-
-
 
 /* === BUTTONS === */
 .btn-primary {
@@ -341,4 +336,111 @@ a {
 
 .card:hover .btn-secondary {
     background-color: var(--color-primary-light);
+}
+
+
+/* FOOTER */
+.footer {
+    background-image: url(../assets/images/footer-gradient-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+}
+
+.footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-top: 30px;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer h2 {
+    color: var(--color-light-xl);
+    text-align: center;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 0 20px;
+    max-width: 302px;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 0 10px;
+    max-width: 302px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer__icon{
+    height: 32px;
+}
+
+.footer__label {
+    color: var(--color-primary);
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 115%;
+    letter-spacing: 1.2px;
+}
+
+@media (min-width: 768px) {
+    .footer__content {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 60px;
+        padding: 16px, 64px
+    }
+
+    .footer__content h2 {
+        text-align: left;
+    }
+    
+    .contacts {
+        align-items: flex-start;
+        padding: 0;  
+    }
+
+    .location {
+        align-items: flex-start;
+        padding: 0;
+    }
+}
+
+
+@media (min-width: 1280px) { 
+    .footer .container {
+        flex-direction: row;
+        align-items: flex-start;
+        padding-top: 40px;
+        align-items: stretch;
+        gap: 160px;
+    }
+
+    .footer__content {
+        gap: 160px;
+        padding-top: 16px;
+    }
 }
