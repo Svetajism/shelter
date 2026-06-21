@@ -5,11 +5,44 @@
     box-sizing: border-box; 
 }
 
-button { cursor: pointer; }
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 320px; 
+    margin: 0; 
+    padding: 0;
+    background-color: var(--color-light-xl);
+}
+
+
+button { 
+    cursor: pointer; 
+}
+
+
 
 img { 
     display: block; 
     max-width: 100%; 
+}
+
+a { 
+    text-decoration: none; 
+    color: inherit; 
+}
+
+section {
+  background-position: center center;
+  background-size: cover;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 
@@ -65,20 +98,6 @@ img {
     --color-light-l: #F6F6F6;
     --color-light-s: #FAFAFA;
 }
-
-
-/* === BASIC === */
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    min-width: 320px; 
-    margin: 0; 
-    padding: 0;
-    background-color: var(--color-light-xl);
-}
-
 
 
 /* TYPOGRAPHY*/
@@ -209,11 +228,6 @@ p {
     }
 }
 
-/* === HEADER === */
-/* desktop */
-@media (min-width: 768px) { }
-@media (min-width: 1280px) { }
-
 
 /* === FOOTER === */
 /* desktop */
@@ -222,4 +236,30 @@ p {
 
 
 
-/* === КНОПКИ (переиспользуемые) === */
+/* === BUTTONS === */
+.btn-primary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 45px;
+    background-color: var(--color-primary);
+    color: var(--color-dark-3xl);
+    border: none;
+    border-radius: 100px;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    background-color: var(--color-primary-light);
+}
+
+.btn-secondary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 45px;
+    background-color: var(--color-light-xl);
+    color: var(--color-dark-3xl);
+    border: 2px solid var(--color-primary-light);
+    border-radius: 100px;
+}

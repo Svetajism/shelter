@@ -9,49 +9,60 @@
     <link rel="stylesheet" href="css/pets.css">
 </head>
 <body>
-    <header class="header-home">
-        <div class="container">
-            <div class="logo">
-                <span class="logo__title">Cozy House</span>
-                <span class="logo__subtitle">Shelter for pets in Boston</span>
-            </div>
-            <nav class="nav-bar">
-                <ul>
-                    <li>
-                        <a href="#about">
-                            <span class="menu__link">About the shelter</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./pets.html">
-                            <span class="menu__link">Our pets</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#help">
-                            <span class="menu__link">Help the shelter</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contacts">
-                            <span>Contacts</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+    <div class="home-screen">
+        <header class="header-home">
+        <div class="logo">
+            <span class="logo__title">Cozy House</span>
+            <span class="logo__subtitle">Shelter for pets in Boston</span>
         </div>
+
+        <div class="burger-menu">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
+
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="#about" class="menu-active">
+                        <span class="menu__link">About the shelter</span>
+                        <div class="menu__active-line"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./pets.html">
+                        <span class="menu__link">Our pets</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#help">
+                        <span class="menu__link">Help the shelter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contacts">
+                        <span class="menu__link">Contacts</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero__content">
-                <h1>Not only people need a house</h1>
+    <section class="hero container">
+            <div class="hero__content container">
+                <h1>Not only people need&nbsp;a&nbsp;house</h1>
                 <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
-                <a href="./pets.html">Make a friend</a>
+                <a href="./pets.html" class="btn-primary">Make a friend</a>
             </div>
 
             <img class="hero__image" src="./assets/start-screen-puppy.png" alt="A dog looking for a home">
         </section>
+
+    </div>
+    
+
+    <main>
 
         <section class="about" id="about"></section>
 
