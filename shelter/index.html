@@ -10,53 +10,53 @@
 </head>
 <body>
     <div class="home-screen">
-        <header class="header-home">
-        <div class="logo">
-            <span class="logo__title">Cozy House</span>
-            <span class="logo__subtitle">Shelter for pets in Boston</span>
-        </div>
-
-        <div class="burger-menu">
-            <div class="burger-line"></div>
-            <div class="burger-line"></div>
-            <div class="burger-line"></div>
-        </div>
-
-        <nav class="nav-bar">
-            <ul>
-                <li>
-                    <a href="#about" class="menu-active">
-                        <span class="menu__link">About the shelter</span>
-                        <div class="menu__active-line"></div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./pets.html">
-                        <span class="menu__link">Our pets</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#help">
-                        <span class="menu__link">Help the shelter</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#contacts">
-                        <span class="menu__link">Contacts</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero container">
-            <div class="hero__content container">
-                <h1>Not only people need&nbsp;a&nbsp;house</h1>
-                <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
-                <a href="./pets.html" class="btn-primary">Make a friend</a>
+        <header class="header-home container">
+            <div class="logo">
+                <span class="logo__title">Cozy House</span>
+                <span class="logo__subtitle">Shelter for pets in Boston</span>
             </div>
 
-            <img class="hero__image" src="./assets/start-screen-puppy.png" alt="A dog looking for a home">
+            <div class="burger-menu">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="#about" class="menu-active">
+                            <span class="menu__link">About the shelter</span>
+                            <div class="menu__active-line"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pets.html">
+                            <span class="menu__link">Our pets</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#help">
+                            <span class="menu__link">Help the shelter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contacts">
+                            <span class="menu__link">Contacts</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero container">
+                <div class="hero__content">
+                    <h1>Not only people<br>need&nbsp;a&nbsp;house</h1>
+                    <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
+                    <a href="./pets.html" class="btn-primary">Make a friend</a>
+                </div>
+
+                <img class="hero__image" src="assets/images/start-screen-puppy.png" alt="A dog">
         </section>
 
     </div>
@@ -64,9 +64,71 @@
 
     <main>
 
-        <section class="about" id="about"></section>
+        <section class="about container" id="about">
+            <div class="about__content">
+                <h2>About the shelter<br>“Cozy&nbsp;House”</h2>
+                <p>Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. The others will continue to live with us and will be waiting for a lucky chance to become dearly loved.</p>
+                <p>We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals are taken by the shelter staff. Taking care of the animals, they become attached to the pets and would hardly ever leave them alone.</p>
+            </div>
 
-        <section class="our-friends" id="our-friends"></section>
+            <img class="about__image" src="assets/images/about-pets.png" alt="A dog and a cat">
+        </section>
+
+        <section class="our-friends" id="our-friends">
+            <div class="our-friends__content container">
+                <h2>Our friends who<br>are looking for a house</h2>
+                
+                <div class="slider">
+            
+                    <button class="slider__btn slider__btn--desktop" type="button" aria-label="Previous slide">
+                        <img src="assets/icons/arrow-left.svg" alt="" aria-hidden="true">
+                    </button>
+
+                    <div class="slider__line">
+                        <div class="card card-1">
+                            <img class="card__image" src="assets/images/pets-katrine.png" alt="A dog">
+                            <div class="card__content">
+                                <h3>Katrine</h3>
+                                <a class="btn-secondary">Learn more</a>
+                            </div>
+                        </div>
+
+                        <div class="card card-2">
+                            <img class="card__image" src="assets/images/pets-jennifer.png" alt="A dog">
+                            <div class="card__content">
+                                <h3>Jennifer</h3>
+                                <a class="btn-secondary">Learn more</a>
+                            </div>
+                        </div>
+
+                        <div class="card card-3">
+                            <img class="card__image" src="assets/images/pets-woody.png" alt="A dog">
+                            <div class="card__content">
+                                <h3>Woody</h3>
+                                <a class="btn-secondary">Learn more</a>
+                            </div>  
+                        </div>
+                    </div>
+
+                    <button class="slider__btn slider__btn--desktop" type="button" aria-label="Next slide">
+                        <img src="assets/icons/arrow-right.svg" alt="" aria-hidden="true">
+                    </button>
+
+                    <div class="slider__controls--mobile">
+                        <button class="slider__btn" type="button" aria-label="Previous slide">
+                            <img src="assets/icons/arrow-left.svg" alt="" aria-hidden="true">
+                        </button>
+
+                        <button class="slider__btn" type="button" aria-label="Next slide">
+                            <img src="assets/icons/arrow-right.svg" alt="" aria-hidden="true">
+                        </button>
+                    </div>
+
+                </div>
+                    
+                <a href="./pets.html" class="btn-primary">Get to know the rest</a>
+            </div>
+        </section>
 
         <section class="help" id="help"></section>
 
