@@ -1,0 +1,225 @@
+/* === NORMALIZE === */
+
+/* === GLOBAL DEFAULTS === */
+*, *::before, *::after { 
+    box-sizing: border-box; 
+}
+
+button { cursor: pointer; }
+
+img { 
+    display: block; 
+    max-width: 100%; 
+}
+
+
+/* === FONTS === */
+@font-face {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-style: normal;
+    src: url('../assets/fonts/Georgia.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Georgia';
+    font-weight: 700;
+    font-style: normal;
+    src: url('../assets/fonts/Georgia-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    src: url('../assets/fonts/Arial.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Arial';
+    font-weight: 400;
+    font-style: italic;
+    src: url('../assets/fonts/Arial-Italic.ttf') format('truetype');
+}
+
+
+
+/* === VARIABLES === */
+:root {
+    /* fonts */
+    --font-main: 'Arial', sans-serif;
+    --font-display: 'Georgia', serif;
+
+    /* colors */
+    --color-primary: #F1CDB3;
+    --color-primary-light: #FDDCC4;
+
+    --color-dark-3xl: #292929;
+    --color-dark-2xl: #444444;
+    --color-dark-xl: #4C4C4C;
+    --color-dark-l: #545454;
+    --color-dark-m: #B2B2B2;
+    --color-dark-s: #CDCDCD;
+
+    --color-light-xl: #FFFFFF;
+    --color-light-l: #F6F6F6;
+    --color-light-s: #FAFAFA;
+}
+
+
+/* === BASIC === */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 320px; 
+    margin: 0; 
+    padding: 0;
+    background-color: var(--color-light-xl);
+}
+
+
+
+/* TYPOGRAPHY*/
+h1, h2, h3, .modal__title, .modal__subtitle, .modal__label, .modal__value, .logo__title {
+    font-family: var(--font-display);
+}
+
+p, span, .text-legal, .menu__link, .logo__subtitle {
+    font-family: var(--font-main);
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 130%;
+    letter-spacing: 1.5px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 130%;
+    letter-spacing: 1.5px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 115%;
+    letter-spacing: 1.2px;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 160%;
+}
+
+.menu__link {
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 160%;
+}
+
+.text-legal {
+    font-size: 12px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 150%;
+}
+
+.logo__title {
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 110%;
+    letter-spacing: 1.92px;
+}
+
+.logo__subtitle {
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.3px;
+}
+
+.modal__title{
+   font-size: 35px;
+   font-weight: 400;
+   line-height: 130%;
+   letter-spacing: 2.1px; 
+}
+
+.modal__subtitle{
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 115%;
+   letter-spacing: 1.2px; 
+}
+
+.modal__label {
+    font-size: 15px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 110%;
+    letter-spacing: 0.9px;
+}
+
+.modal__value {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: 0.9px;
+}
+
+.modal__pet-description {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: 0.78px;
+}
+
+@media (min-width: 768px) {
+    h1 {
+    font-size: 44px;
+    }
+
+    h2 {
+        font-size: 35px;
+        letter-spacing: 2.1px;
+    }
+
+    .menu__link {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .modal__pet-description {
+        font-size: 15px;
+    }
+}
+
+/* === HEADER === */
+/* desktop */
+@media (min-width: 768px) { }
+@media (min-width: 1280px) { }
+
+
+/* === FOOTER === */
+/* desktop */
+@media (min-width: 768px) { }
+@media (min-width: 1280px) { }
+
+
+
+/* === КНОПКИ (переиспользуемые) === */
