@@ -91,6 +91,10 @@
 
 
 /* === PETS === */
+.visually-hidden {
+    display: none;
+}
+
 .pets {
     background-color: var(--color-light-l);
     padding: 42px 0;
@@ -165,6 +169,10 @@
 @media (min-width: 1280px) {
     .pets {
         padding: 80px 0 100px 0;
+    }
+
+    .pets__content {
+        gap: 60px
     }
 
     .card-7__pets,
