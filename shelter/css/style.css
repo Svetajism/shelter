@@ -304,6 +304,55 @@ a {
     cursor: pointer;
 }
 
+.page__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    background-color: transparent;
+    border-radius: 100px;
+    border: 2px solid var(--color-primary);
+    cursor: pointer;
+}
+
+.page__btn:hover {
+    background-color: var(--color-primary);
+}
+
+.page__btn-inactive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    background-color: transparent;
+    border-radius: 100px;
+    border: 2px solid var(--color-dark-s);
+    cursor: default;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    background-color: var(--color-primary);
+    border-radius: 100px;
+    cursor: default;
+}
+
+.page__number {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115%;
+    letter-spacing: 1.2px;
+    color: var(--color-dark-3xl);
+}
+
 /* === CARD === */
 .card {
     width: 270px;

@@ -7,15 +7,22 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/pets.css">
+
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
 </head>
 
 
 <body>
     <header class="header-pets container">
-            <div class="logo">
+            <a href="index.html" class="logo">
                 <span class="logo__title">Cozy House</span>
                 <span class="logo__subtitle">Shelter for pets in Boston</span>
-            </div>
+            </a>
 
             <div class="burger-menu">
                 <div class="burger-line"></div>
@@ -51,7 +58,105 @@
         </header>
 
     <main>
-        <h1 style="text-align: center; padding: 100px" class="container">Please, check tomorrow...<br>Work in progress</h1>
+        <section class="pets" id="pets">
+            <div class="pets__content container">
+                <h1>Our friends who<br>are looking for a house</h1>
+                
+                <div class="page">
+
+                    <div class="page__cards">
+                        <div class="card card-1__pets">
+                            <img class="card__image" src="assets/images/pets-katrine.png" alt="A dog">
+                            <div class="card__content">
+                                <h3>Katrine</h3>
+                                <a class="btn-secondary">Learn more</a>
+                            </div>
+                        </div>
+
+                        <div class="card card-2__pets">
+                            <img class="card__image" src="assets/images/pets-jennifer.png" alt="A dog">
+                            <div class="card__content">
+                                <h3>Jennifer</h3>
+                                <a class="btn-secondary">Learn more</a>
+                            </div>
+                        </div>
+
+                        <div class="card card-3__pets">
+                            <img class="card__image" src="assets/images/pets-woody.png" alt="A dog">
+                            <div class="card__content">
+                                <h3>Woody</h3>
+                                <a class="btn-secondary">Learn more</a>
+                            </div>  
+                        </div>
+
+                        <div class="card card-4__pets">
+                            <img class="card__image" src="assets/images/pets-sofia.png" alt="A dog">
+                            <div class="card__content">
+                                <h3>Sophia</h3>
+                                <a class="btn-secondary">Learn more</a>
+                            </div>  
+                        </div>
+
+                        <div class="card card-5__pets">
+                            <img class="card__image" src="assets/images/pets-timmy.png" alt="A dog">
+                            <div class="card__content">
+                                <h3>Timmy</h3>
+                                <a class="btn-secondary">Learn more</a>
+                            </div>  
+                        </div>
+
+                        <div class="card card-6__pets">
+                            <img class="card__image" src="assets/images/pets-charly.png" alt="A dog">
+                            <div class="card__content">
+                                <h3>Charly</h3>
+                                <a class="btn-secondary">Learn more</a>
+                            </div>  
+                        </div>
+
+                        <div class="card card-7__pets">
+                            <img class="card__image" src="assets/images/pets-scarlet.png" alt="A dog">
+                            <div class="card__content">
+                                <h3>Scarlett</h3>
+                                <a class="btn-secondary">Learn more</a>
+                            </div>  
+                        </div>
+
+                        <div class="card card-8__pets">
+                            <img class="card__image" src="assets/images/pets-freddie.png" alt="A dog">
+                            <div class="card__content">
+                                <h3>Freddie</h3>
+                                <a class="btn-secondary">Learn more</a>
+                            </div>  
+                        </div>
+                    </div>
+
+                    <div class="page__controls">
+
+                        <button class="page__btn-inactive" type="button" aria-label="First page">
+                            <img src="assets/icons/<<.svg" alt="" aria-hidden="true">
+                        </button>
+
+                        <button class="page__btn-inactive" type="button" aria-label="Previous page">
+                            <img src="assets/icons/<.svg" alt="" aria-hidden="true">
+                        </button>
+
+                        <div class="pagination">
+                            <span class="page__number">1</span>
+                        </div>
+
+                        <button class="page__btn" type="button" aria-label="Next page">
+                            <img src="assets/icons/>.svg" alt="" aria-hidden="true">
+                        </button>
+
+                        <button class="page__btn" type="button" aria-label="Last pages">
+                            <img src="assets/icons/>>.svg" alt="" aria-hidden="true">
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
 
     </main>
 
