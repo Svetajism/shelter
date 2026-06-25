@@ -121,8 +121,6 @@
 .menu-open .nav-bar {
     display: flex;
     flex-direction: column;
-    
-    /* Центрируем содержимое (наш ul) по вертикали и горизонтали */
     justify-content: center; 
     align-items: center;
     
@@ -142,8 +140,8 @@
     align-items: center;
     justify-content: center;
     gap: 40px;
-    padding: 0; /* Сбрасываем внутренние отступы браузера по умолчанию */
-    margin: 0;  /* Сбрасываем внешние отступы */
+    padding: 0;
+    margin: 0;
 }
 
 .menu-open .nav-bar li {
