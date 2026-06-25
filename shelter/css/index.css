@@ -42,6 +42,7 @@
     align-items: center;
     gap: 10px;
     border-radius: 4px;
+    cursor: pointer; /* Добавлено для удобства */
 }
 
 .burger-line {
@@ -54,9 +55,26 @@
     display: none;
 }
 
+.nav-bar a {
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3px; /* Отступ для линии подчеркивания */
+    border-bottom: 3px solid transparent; /* Невидимая линия по умолчанию */
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.nav-bar a.menu-active {
+    border-bottom-color: var(--color-primary); /* Появляется линия */
+}
+.nav-bar a.menu-active .menu__link {
+    color: var(--color-light-s) !important; /* Цвет активного текста */
+}
+
 /* === desktop & tablet === */
 @media (min-width: 768px) {
-    .burger-menu {
+   .burger-menu {
         display: none;
     }
 
@@ -70,7 +88,7 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        gap: 35px;
+        gap: 2.25rem;
     }
     
     .nav-bar li {
@@ -81,23 +99,71 @@
         color: var(--color-dark-s);
     }
 
-
     .menu__link:hover {
-        color: var(--color-light-s);
-    }
-
-    .menu__active-line {
-        background: var(--color-primary);
-        height: 3px;
-        align-self: stretch;
-    }
-    
-    .menu-active .menu__link {
         color: var(--color-light-s);
     }
 }
 
 
+/* === BURGER-MENU === */
+.overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(41, 41, 41, 0.6);
+    z-index: 10;
+}
+
+.menu-open .overlay {
+    display: block;
+}
+
+.menu-open .nav-bar {
+    display: flex;
+    flex-direction: column;
+    
+    /* Центрируем содержимое (наш ul) по вертикали и горизонтали */
+    justify-content: center; 
+    align-items: center;
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 85%;
+    min-width: 320px;
+    height: 100%;
+    z-index: 20;
+    background-color: var(--color-dark-3xl);
+}
+
+.menu-open .nav-bar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 0; /* Сбрасываем внутренние отступы браузера по умолчанию */
+    margin: 0;  /* Сбрасываем внешние отступы */
+}
+
+.menu-open .nav-bar li {
+    list-style: none;
+}
+
+/* Стили текста ссылок внутри мобильного меню */
+.menu-open .nav-bar .menu__link {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-align: center;
+    color: var(--color-dark-s);
+}
+
+.menu-open .burger-menu{
+    transform: rotate(90deg);
+    z-index: 30;
+}
 
 /* === HERO === */
 .home-screen {
@@ -231,8 +297,8 @@
 }
 
 .about__image {
-    max-width: 260px;
-    max-height: 354px;
+    width: 260px;
+    height: 354px;
     object-fit: cover;
 }
 
@@ -254,8 +320,8 @@
     }
 
     .about__image {
-        max-width: 300px;
-        max-height: 408px;
+        width: 300px;
+        height: 408px;
     }
 }
 
@@ -265,6 +331,10 @@
         align-items: flex-start;
         justify-content: center;
         gap: 120px;
+    }
+
+    .about__content {
+        padding: 14px 0 0 0;
     }
 }
 

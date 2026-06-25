@@ -136,14 +136,6 @@
     display: none;
 }
 
-
-.page__controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-}
-
 @media (min-width: 768px) {
     .pets {
         padding: 60px 0 70px 0;
