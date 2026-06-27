@@ -24,12 +24,9 @@ body {
     background-color: var(--color-light-xl);
 }
 
-
 button { 
     cursor: pointer; 
 }
-
-
 
 img { 
     display: block; 
@@ -237,6 +234,7 @@ a {
 @media (min-width: 768px) {
     h1 {
     font-size: 44px;
+    letter-spacing: 0px;
     }
 
     h2 {

@@ -14,6 +14,10 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <meta name="apple-mobile-web-app-title" content="MyWebSite">
     <link rel="manifest" href="favicon/site.webmanifest">
+
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/burger.js" defer></script>
+    <script src="scripts/popup.js" defer></script>
 </head>
 
 
@@ -40,7 +44,7 @@
                     <li>
                         <a href="./pets.html" class="menu-active">
                             <span class="menu__link">Our pets</span>
-                            <div class="menu__active-line"></div>
+                            <!-- <div class="menu__active-line"></div> -->
                         </a>
                     </li>
                     <li>
@@ -65,7 +69,7 @@
                 <div class="page">
 
                     <div class="page__cards">
-                        <div class="card card-1__pets">
+                        <!-- <div class="card card-1__pets">
                             <img class="card__image" src="assets/images/pets-katrine.png" alt="A dog">
                             <div class="card__content">
                                 <h3>Katrine</h3>
@@ -127,16 +131,16 @@
                                 <h3>Freddie</h3>
                                 <a class="btn-secondary">Learn more</a>
                             </div>  
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="page__controls">
 
-                        <button class="page__btn-inactive" type="button" aria-label="First page">
+                        <button class="page__btn-inactive page__btn-first" type="button" aria-label="First page">
                             <img src="assets/icons/page-first.svg" alt="" aria-hidden="true">
                         </button>
 
-                        <button class="page__btn-inactive" type="button" aria-label="Previous page">
+                        <button class="page__btn-inactive page__btn-prev" type="button" aria-label="Previous page">
                             <img src="assets/icons/page-prev.svg" alt="" aria-hidden="true">
                         </button>
 
@@ -144,11 +148,11 @@
                             <span class="page__number">1</span>
                         </div>
 
-                        <button class="page__btn" type="button" aria-label="Next page">
+                        <button class="page__btn page__btn-next" type="button" aria-label="Next page">
                             <img src="assets/icons/page-next.svg" alt="" aria-hidden="true">
                         </button>
 
-                        <button class="page__btn" type="button" aria-label="Last pages">
+                        <button class="page__btn page__btn-last" type="button" aria-label="Last pages">
                             <img src="assets/icons/page-last.svg" alt="" aria-hidden="true">
                         </button>
                     </div>
