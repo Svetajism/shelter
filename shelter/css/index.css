@@ -60,16 +60,16 @@
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 3px; /* Отступ для линии подчеркивания */
-    border-bottom: 3px solid transparent; /* Невидимая линия по умолчанию */
+    padding-bottom: 3px;
+    border-bottom: 3px solid transparent;
     transition: color 0.3s, border-color 0.3s;
 }
 
 .nav-bar a.menu-active {
-    border-bottom-color: var(--color-primary); /* Появляется линия */
+    border-bottom-color: var(--color-primary);
 }
 .nav-bar a.menu-active .menu__link {
-    color: var(--color-light-s) !important; /* Цвет активного текста */
+    color: var(--color-light-s)
 }
 
 /* === desktop & tablet === */

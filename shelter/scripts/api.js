@@ -1,4 +1,6 @@
-async function fetchPets() {
+// функция загрузки массива питомцев
+
+export async function fetchPets() {
     try {
         const response = await fetch('./pets.json');
         
