@@ -283,6 +283,12 @@ a {
     color: var(--color-dark-3xl);
     border: 2px solid var(--color-primary-light);
     border-radius: 100px;
+    font-family: var(--font-display);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 22.1px */
+    letter-spacing: 1.02px;
 }
 
 .slider__btn {

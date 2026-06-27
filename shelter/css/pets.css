@@ -177,9 +177,13 @@
 .page__controls {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     gap: 10px;
 }
+
+.page__cards { transition: opacity 0.3s; }
+.page__cards.fade-out { opacity: 0; }
 
 @media (min-width: 768px) {
     .page__controls {

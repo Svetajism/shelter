@@ -363,11 +363,6 @@
     gap: 20px;
 }
 
-.card-2,
-.card-3 {
-    display: none;
-}
-
 .slider__btn--desktop {
     display: none;
     flex-shrink: 0;
