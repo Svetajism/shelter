@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/pets.css">
+
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="MyWebSite">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/burger.js" defer></script>
+</head>
+<body>
+    <div class="home-screen">
+        <header class="header-home container">
+            <a href="index.html" class="logo">
+                <span class="logo__title">Cozy House</span>
+                <span class="logo__subtitle">Shelter for pets in Boston</span>
+            </a>
+
+            <div class="burger-menu">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="#about" class="menu-active">
+                            <span class="menu__link">About the shelter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pets.html">
+                            <span class="menu__link">Our pets</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#help">
+                            <span class="menu__link">Help the shelter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contacts">
+                            <span class="menu__link">Contacts</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero container">
+                <div class="hero__content">
+                    <h1>Not only people<br>need&nbsp;a&nbsp;house</h1>
+                    <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
+                    <a href="./pets.html" class="btn-primary">Make a friend</a>
+                </div>
+
+                <img class="hero__image" src="assets/images/start-screen-puppy.png" alt="A dog">
+        </section>
+    </div>
+    
+
+    <main>
+
+        <section class="about container" id="about">
+            <div class="about__content">
+                <h2>About the shelter<br>“Cozy&nbsp;House”</h2>
+                <p>Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. The others will continue to live with us and will be waiting for a lucky chance to become dearly loved.</p>
+                <p>We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals are taken by the shelter staff. Taking care of the animals, they become attached to the pets and would hardly ever leave them alone.</p>
+            </div>
+
+            <img class="about__image" src="assets/images/about-pets.png" alt="A dog and a cat">
+        </section>
+
+        <section class="our-friends" id="our-friends">
+            <div class="our-friends__content container">
+                <h2>Our friends who<br>are looking for a house</h2>
+                
+                <div class="slider">
+            
+                    <button class="slider__btn slider__btn--desktop" type="button" aria-label="Previous slide">
+                        <img src="assets/icons/arrow-left.svg" alt="" aria-hidden="true">
+                    </button>
+
+                    <div class="slider__line"></div>
+
+                    <button class="slider__btn slider__btn--desktop" type="button" aria-label="Next slide">
+                        <img src="assets/icons/arrow-right.svg" alt="" aria-hidden="true">
+                    </button>
+
+                    <div class="slider__controls--mobile">
+                        <button class="slider__btn" type="button" aria-label="Previous slide">
+                            <img src="assets/icons/arrow-left.svg" alt="" aria-hidden="true">
+                        </button>
+
+                        <button class="slider__btn" type="button" aria-label="Next slide">
+                            <img src="assets/icons/arrow-right.svg" alt="" aria-hidden="true">
+                        </button>
+                    </div>
+
+                </div>
+                    
+                <a href="./pets.html" class="btn-primary">Get to know the rest</a>
+            </div>
+        </section>
+
+        <section class="help" id="help">
+            <div class="container">
+                <h2>How you can help<br>our shelter</h2>
+                
+                <ul class="help__list">
+                    <li class="help__item">
+                        <img class="help__icon" src="assets/icons/icon-pet-food.svg" alt="">
+                        <span class="help__label">Pet food</span>
+                    </li>
+
+                    <li class="help__item">
+                        <img class="help__icon" src="assets/icons/icon-transportation.svg" alt="">
+                        <span class="help__label">Transportation</span>
+                    </li>
+
+                    <li class="help__item">
+                        <img class="help__icon" src="assets/icons/icon-toys.svg" alt="">
+                        <span class="help__label">Toys</span>
+                    </li>
+
+                    <li class="help__item">
+                        <img class="help__icon" src="assets/icons/icon-bowls-and-cups.svg" alt="">
+                        <span class="help__label">Bowls and cups</span>
+                    </li>
+
+                    <li class="help__item">
+                        <img class="help__icon" src="assets/icons/icon-shampoos.svg" alt="">
+                        <span class="help__label">Shampoos</span>
+                    </li>
+
+                    <li class="help__item">
+                        <img class="help__icon" src="assets/icons/icon-vitamins.svg" alt="">
+                        <span class="help__label">Vitamins</span>
+                    </li>
+
+                    <li class="help__item">
+                        <img class="help__icon" src="assets/icons/icon-medicines.svg" alt="">
+                        <span class="help__label">Medicines</span>
+                    </li>
+
+                    <li class="help__item">
+                        <img class="help__icon" src="assets/icons/icon-collars-leashes.svg" alt="">
+                        <span class="help__label">Collars / leashes</span>
+                    </li>
+
+                    <li class="help__item">
+                        <img class="help__icon" src="assets/icons/icon-sleeping-area.svg" alt="">
+                        <span class="help__label">Sleeping areas</span>
+                    </li>
+                </ul>
+                
+            </div>
+        </section>
+
+        <section class="donation" id="donation">
+            <div class="container">
+                <div class="donation__content">
+                    <h2>You can also<br>make a donation</h2>
+                    <span class="donation__subtitle">Name of the bank / Type of bank account</span>
+                    <div class="donation__card-area">
+                        <img class="card__icon" src="assets/icons/credit-card.svg" alt="">
+                        <span class="card__number">8380 2880 8028 8791 7435</span>
+                    </div>
+                    <p class="text-legal">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                </div>
+                
+                <img class="donation__image" src="assets/images/donation-dog.png" alt="A dog">
+                
+            </div>
+        </section>
+
+    </main>
+
+<footer class="footer" id="contacts">
+        <div class = container>
+            <div class="footer__content">
+                <div class="contacts">
+                    <h2>For questions and suggestions</h2>
+                    <a href="mailto:email@shelter.com" class="footer-info">
+                        <img class="footer__icon" src="assets/icons/icon-email.svg" alt="">
+                        <span class="footer__label">email@shelter.com</span>
+                    </a>
+
+                    <a href="tel:+136745677554" class="footer-info">
+                        <img class="footer__icon" src="assets/icons/icon-phone.svg" alt="">
+                        <span class="footer__label">+13 674 567 75 54</span>
+                    </a>
+                </div>
+
+                <div class="location">
+                    <h2>We are waiting<br>for&nbsp;your visit</h2>
+
+                    <div class="location__list">
+                        <a href="https://maps.app.goo.gl/FSZXN5FSzHfqyzTW8" class="footer-info">
+                            <img class="footer__icon" src="assets/icons/icon-marker.svg" alt="">
+                            <span class="footer__label">1 Central Street, Boston (entrance from the store)</span>
+                        </a>
+
+                        <a href="https://maps.app.goo.gl/FSZXN5FSzHfqyzTW8" class="footer-info">
+                            <img class="footer__icon" src="assets/icons/icon-marker.svg" alt="">
+                            <span class="footer__label">18 South Park, London</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <img class="footer__image" src="assets/images/footer-puppy.png" alt="A dog">
+
+        </div>
+
+    </footer>
+
+    <div class="popup-overlay" id="popupOverlay" aria-hidden="true">
+    <div class="popup" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+
+        <button class="popup__close" type="button" aria-label="Close popup">
+            <img src="assets/icons/cross.svg" alt="" aria-hidden="true">
+        </button>
+
+        <div class="popup__content">
+            <img class="popup__img" src="" alt="">
+
+            <div class="popup__info">
+                <h3 class="popup__title modal__title" id="popupTitle"></h3>
+                <p class="popup__subtitle modal__subtitle"></p>
+                <p class="popup__description modal__pet-description"></p>
+
+                <ul class="popup__details">
+                    <li>
+                        <span class="modal__label">Age: </span>
+                        <span class="modal__value popup__age"></span>
+                    </li>
+                    <li>
+                        <span class="modal__label">Inoculations: </span>
+                        <span class="modal__value popup__inoculations"></span>
+                    </li>
+                    <li>
+                        <span class="modal__label">Diseases: </span>
+                        <span class="modal__value popup__diseases"></span>
+                    </li>
+                    <li>
+                        <span class="modal__label">Parasites: </span>
+                        <span class="modal__value popup__parasites"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+    
+</body>
+</html>
