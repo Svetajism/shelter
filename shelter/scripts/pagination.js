@@ -114,6 +114,3 @@ function render() {
     container.classList.remove('fade-out');
   }, 300);
 }
-
-const pagination = 'pagination'
-console.log(pagination)

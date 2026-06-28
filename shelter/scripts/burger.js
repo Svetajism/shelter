@@ -8,12 +8,16 @@ const body = document.body;
 function openMenu() {
     body.classList.add('menu-open');
     body.style.overflow = 'hidden'; // scroll-lock
+    document.documentElement.style.overflow = 'hidden'; // html
+    document.body.style.overflow = 'hidden';            // body
 }
 
 // REMOVE CLASS .MENU-OPEN
 function closeMenu() {
     body.classList.remove('menu-open');
     body.style.overflow = ''; // снять scroll-lock
+    document.documentElement.style.overflow = '';
+    document.body.style.overflow = '';
 }
 
 // FIND .BURGER-MENU
@@ -43,6 +47,3 @@ nav.addEventListener('click', (e) => {
 burger.addEventListener('click', () => {
     body.classList.contains('menu-open') ? closeMenu() : openMenu();
 });
-
-let helloBurger = 'burger';
-console.log(helloBurger);

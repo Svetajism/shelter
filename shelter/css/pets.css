@@ -10,11 +10,11 @@
     color: var(--color-dark-l);
 }
 
-.header-pets .menu__link:hover {
-    color: var(--color-dark-3xl);
+.header-pets .nav-bar a.menu-active .menu__link {
+    color: var(--color-dark-s);
 }
 
-.header-pets .menu-active .menu__link{
+.header-pets .menu__link:hover {
     color: var(--color-dark-3xl);
 }
 
@@ -22,6 +22,10 @@
     .header-pets {
         padding: 30px 30px;
     }
+
+    .header-pets .nav-bar a.menu-active .menu__link {
+        color: var(--color-dark-3xl);
+}
 }
 
 @media (min-width: 1280px) {

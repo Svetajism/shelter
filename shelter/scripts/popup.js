@@ -52,6 +52,8 @@ function openPopup(pet, overlay) {
 
     // Scroll-lock
     document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden'; // html
+
 }
 
 function closePopup(overlay) {
@@ -60,4 +62,5 @@ function closePopup(overlay) {
 
     // Снимаем scroll-lock
     document.body.style.overflow = '';
+    document.documentElement.style.overflow = '';
 }
