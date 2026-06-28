@@ -24,12 +24,9 @@ body {
     background-color: var(--color-light-xl);
 }
 
-
 button { 
     cursor: pointer; 
 }
-
-
 
 img { 
     display: block; 
@@ -237,6 +234,7 @@ a {
 @media (min-width: 768px) {
     h1 {
     font-size: 44px;
+    letter-spacing: 0px;
     }
 
     h2 {
@@ -285,6 +283,12 @@ a {
     color: var(--color-dark-3xl);
     border: 2px solid var(--color-primary-light);
     border-radius: 100px;
+    font-family: var(--font-display);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 22.1px */
+    letter-spacing: 1.02px;
 }
 
 .slider__btn {
@@ -311,6 +315,7 @@ a {
     width: 52px;
     height: 52px;
     background-color: transparent;
+    fill: var(--color-dark-3xl);
     border-radius: 100px;
     border: 2px solid var(--color-primary);
     cursor: pointer;
@@ -327,9 +332,20 @@ a {
     width: 52px;
     height: 52px;
     background-color: transparent;
+    fill: var(--color-dark-s);
     border-radius: 100px;
     border: 2px solid var(--color-dark-s);
     cursor: default;
+}
+
+.page__btn.page__btn-inactive {
+    border-color: var(--color-dark-s);
+    cursor: default;
+    pointer-events: none;
+}
+
+.page__btn.page__btn-inactive:hover {
+    background-color: transparent;
 }
 
 .pagination {
@@ -498,4 +514,170 @@ a {
         gap: 160px;
         padding-top: 16px;
     }
+}
+
+
+/* === POPUP === */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;                          /* top:0 right:0 bottom:0 left:0 */
+    background-color: rgba(41, 41, 41, 0.6);
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.popup-overlay.popup-open {
+    display: flex;                     /* flex, чтобы центровать popup внутри */
+}
+
+.popup {
+    position: relative;
+    background-color: var(--color-light-s);
+    border-radius: 9px;
+    max-width: 900px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.popup__close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 52px;
+    height: 52px;
+    background: transparent;
+    border: 2px solid var(--color-primary);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.popup__close:hover {
+    background-color: var(--color-primary-light);
+    border-color: var(--color-primary-light);
+}
+
+.popup__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup__img {
+    display: none;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 9px 9px 0 0;
+}
+
+.popup__info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.popup__details {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .popup__content {
+        flex-direction: row;       /* img слева, текст справа */
+    }
+
+    .popup__img {
+        display: flex;
+        height: 350px;
+    }
+
+    .popup__info {
+        padding: 30px;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .popup__img {
+        width: 500px;
+        height: auto;
+        border-radius: 9px 0 0 9px;
+        flex-shrink: 0;
+    }
+
+    .popup__info {
+        padding: 60px 40px;
+    }
+}
+
+
+/* === BURGER-MENU === */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(41, 41, 41, 0.6);
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.menu-open .overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.menu-open .nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 85%;
+    min-width: 320px;
+    height: 100%;
+    z-index: 20;
+    background-color: var(--color-dark-3xl);
+
+    transform: translateX(0);
+}
+
+.menu-open .nav-bar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-open .nav-bar li {
+    list-style: none;
+}
+
+.menu-open .nav-bar .menu__link {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 160%;
+    text-align: center;
+    color: var(--color-dark-s);
+}
+
+.menu-open .burger-menu {
+    transform: rotate(90deg);
+    z-index: 30;
 }

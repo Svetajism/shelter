@@ -14,6 +14,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <meta name="apple-mobile-web-app-title" content="MyWebSite">
     <link rel="manifest" href="favicon/site.webmanifest">
+
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/burger.js" defer></script>
 </head>
 
 
@@ -40,7 +43,7 @@
                     <li>
                         <a href="./pets.html" class="menu-active">
                             <span class="menu__link">Our pets</span>
-                            <div class="menu__active-line"></div>
+                            <!-- <div class="menu__active-line"></div> -->
                         </a>
                     </li>
                     <li>
@@ -64,92 +67,38 @@
                 <h2 class="visually-hidden">Pets</h2>
                 <div class="page">
 
-                    <div class="page__cards">
-                        <div class="card card-1__pets">
-                            <img class="card__image" src="assets/images/pets-katrine.png" alt="A dog">
-                            <div class="card__content">
-                                <h3>Katrine</h3>
-                                <a class="btn-secondary">Learn more</a>
-                            </div>
-                        </div>
-
-                        <div class="card card-2__pets">
-                            <img class="card__image" src="assets/images/pets-jennifer.png" alt="A dog">
-                            <div class="card__content">
-                                <h3>Jennifer</h3>
-                                <a class="btn-secondary">Learn more</a>
-                            </div>
-                        </div>
-
-                        <div class="card card-3__pets">
-                            <img class="card__image" src="assets/images/pets-woody.png" alt="A dog">
-                            <div class="card__content">
-                                <h3>Woody</h3>
-                                <a class="btn-secondary">Learn more</a>
-                            </div>  
-                        </div>
-
-                        <div class="card card-4__pets">
-                            <img class="card__image" src="assets/images/pets-sofia.png" alt="A dog">
-                            <div class="card__content">
-                                <h3>Sophia</h3>
-                                <a class="btn-secondary">Learn more</a>
-                            </div>  
-                        </div>
-
-                        <div class="card card-5__pets">
-                            <img class="card__image" src="assets/images/pets-timmy.png" alt="A dog">
-                            <div class="card__content">
-                                <h3>Timmy</h3>
-                                <a class="btn-secondary">Learn more</a>
-                            </div>  
-                        </div>
-
-                        <div class="card card-6__pets">
-                            <img class="card__image" src="assets/images/pets-charly.png" alt="A dog">
-                            <div class="card__content">
-                                <h3>Charly</h3>
-                                <a class="btn-secondary">Learn more</a>
-                            </div>  
-                        </div>
-
-                        <div class="card card-7__pets">
-                            <img class="card__image" src="assets/images/pets-scarlet.png" alt="A dog">
-                            <div class="card__content">
-                                <h3>Scarlett</h3>
-                                <a class="btn-secondary">Learn more</a>
-                            </div>  
-                        </div>
-
-                        <div class="card card-8__pets">
-                            <img class="card__image" src="assets/images/pets-freddie.png" alt="A dog">
-                            <div class="card__content">
-                                <h3>Freddie</h3>
-                                <a class="btn-secondary">Learn more</a>
-                            </div>  
-                        </div>
-                    </div>
+                    <div class="page__cards"></div>
 
                     <div class="page__controls">
 
-                        <button class="page__btn-inactive" type="button" aria-label="First page">
-                            <img src="assets/icons/page-first.svg" alt="" aria-hidden="true">
+                        <button class="page__btn page__btn-first" type="button" aria-label="First page">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="11" viewBox="0 0 24 11" fill="none">
+                                <path d="M9.0332 10.498L0 5.80078V4.69727L9.0332 0V1.33789L1.52344 5.24414L9.0332 9.16016V10.498Z" fill="currentColor"/>
+                                <path d="M23.1043 10.498L14.0711 5.80078V4.69727L23.1043 0V1.33789L15.5945 5.24414L23.1043 9.16016V10.498Z" fill="currentColor"/>
+                            </svg>
                         </button>
 
-                        <button class="page__btn-inactive" type="button" aria-label="Previous page">
-                            <img src="assets/icons/page-prev.svg" alt="" aria-hidden="true">
+                        <button class="page__btn page__btn-prev" type="button" aria-label="Previous page">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" viewBox="0 0 10 11" fill="none">
+                                <path d="M9.0332 10.498L0 5.80078V4.69727L9.0332 0V1.33789L1.52344 5.24414L9.0332 9.16016V10.498Z" fill="currentColor"/>
+                            </svg>
                         </button>
 
                         <div class="pagination">
                             <span class="page__number">1</span>
                         </div>
 
-                        <button class="page__btn" type="button" aria-label="Next page">
-                            <img src="assets/icons/page-next.svg" alt="" aria-hidden="true">
+                        <button class="page__btn page__btn-next" type="button" aria-label="Next page">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" viewBox="0 0 10 11" fill="none">
+                                <path d="M9.0332 5.80078L0 10.498V9.16016L7.50977 5.24414L0 1.33789V0L9.0332 4.69727V5.80078Z" fill="currentColor"/>
+                            </svg>
                         </button>
 
-                        <button class="page__btn" type="button" aria-label="Last pages">
-                            <img src="assets/icons/page-last.svg" alt="" aria-hidden="true">
+                        <button class="page__btn page__btn-last" type="button" aria-label="Last pages">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="11" viewBox="0 0 24 11" fill="none">
+                                <path d="M9.0332 5.80078L0 10.498V9.16016L7.50977 5.24414L0 1.33789V0L9.0332 4.69727V5.80078Z" fill="currentColor"/>
+                                <path d="M23.1043 5.80078L14.0711 10.498V9.16016L21.5809 5.24414L14.0711 1.33789V0L23.1043 4.69727V5.80078Z" fill="currentColor"/>
+                            </svg>
                         </button>
                     </div>
 
@@ -198,6 +147,45 @@
         </div>
 
     </footer>
+
+    <div class="popup-overlay" id="popupOverlay" aria-hidden="true">
+    <div class="popup" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+
+        <button class="popup__close" type="button" aria-label="Close popup">
+            <img src="assets/icons/cross.svg" alt="" aria-hidden="true">
+        </button>
+
+        <div class="popup__content">
+            <img class="popup__img" src="" alt="">
+
+            <div class="popup__info">
+                <h3 class="popup__title modal__title" id="popupTitle"></h3>
+                <p class="popup__subtitle modal__subtitle"></p>
+                <p class="popup__description modal__pet-description"></p>
+
+                <ul class="popup__details">
+                    <li>
+                        <span class="modal__label">Age: </span>
+                        <span class="modal__value popup__age"></span>
+                    </li>
+                    <li>
+                        <span class="modal__label">Inoculations: </span>
+                        <span class="modal__value popup__inoculations"></span>
+                    </li>
+                    <li>
+                        <span class="modal__label">Diseases: </span>
+                        <span class="modal__value popup__diseases"></span>
+                    </li>
+                    <li>
+                        <span class="modal__label">Parasites: </span>
+                        <span class="modal__value popup__parasites"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
     
 </body>
 </html>
