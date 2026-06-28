@@ -14,6 +14,3 @@ export async function getPets() {
         return [];
     }
 }
-
-const api = 'api'
-console.log(api)

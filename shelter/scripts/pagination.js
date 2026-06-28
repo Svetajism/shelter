@@ -1,4 +1,3 @@
-import { getPets } from './api.js';
 import { generateShuffled } from './utils.js';
 
 const state = {
@@ -14,8 +13,7 @@ function getCardsPerPage() {
     return 3;
 }
 
-export async function initPagination() {
-    const pets = await getPets();
+export function initPagination(pets) {
     state.allCards = generateShuffled(pets);
     bindControls();
     render();
@@ -50,6 +48,7 @@ function renderCards(cards) {
         // card
         const card = document.createElement('div');
         card.className = 'card';
+        card.dataset.petName = pet.name;
 
         // img
         const img = document.createElement('img');

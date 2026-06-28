@@ -1,4 +1,3 @@
-import { getPets } from './api.js';
 import { shuffled, debounce } from './utils.js';
 
 // === СОСТОЯНИЕ ===
@@ -9,9 +8,9 @@ const state = {
 };
 
 // === ТОЧКА ВХОДА ===
-export async function initCarousel() {
-    state.allPets = await getPets();
-    state.currentGroup = pickNextGroup([]);  // первый показ: все доступны
+export function initCarousel(pets) {
+    state.allPets = pets;
+    state.currentGroup = pickNextGroup([]);
     renderCards(state.currentGroup);
     bindControls();
 }
@@ -45,6 +44,7 @@ function renderCards(pets) {
         // card
         const card = document.createElement('div');
         card.className = 'card';
+        card.dataset.petName = pet.name;
 
         // img
         const img = document.createElement('img');
