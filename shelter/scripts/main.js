@@ -1,25 +1,25 @@
-import { fetchPets } from './api.js';
-import { createExtendedArray } from './utils.js';
-import { getCardsPerPage, renderCards, updateControls, extendedPets } from './pagination.js';
+import { initPagination } from './pagination.js';
+import { initCarousel } from './carousel.js';
+import { initPopup } from './popup.js';
+import { getPets } from './api.js';
 
-document.addEventListener('DOMContentLoaded', async () => {
-    const cardsContainer = document.querySelector('.page__cards');
-    const paginationContainer = document.querySelector('.pagination');
+async function init() {
+  const pets = await getPets();
 
-    if (!cardsContainer && !paginationContainer) {
-        return;
-    }
-    
-    // Получаем питомцев и генерируем массив из 48 штук
-    const pets = await fetchPets();
-    const generated = createExtendedArray(pets);
-    
-    // Наполняем экспортированный пустой массив данными 
-    // (мутация массива через push разрешена для экспортируемых объектов)
-    extendedPets.length = 0;
-    extendedPets.push(...generated);
+  // Pets page
+  if (document.querySelector('.page__cards')) {
+    initPagination(pets);
+  }
 
-    // Первоначальный запуск отрисовки
-    renderCards();
-    updateControls();
-});
+  // Main page
+  if (document.querySelector('.slider__line')) {
+      initCarousel(pets);
+  }
+
+  // Popup — на обеих страницах
+  if (document.getElementById('popupOverlay')) {
+      initPopup(pets);
+  }
+}
+
+init();

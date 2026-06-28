@@ -363,11 +363,6 @@
     gap: 20px;
 }
 
-.card-2,
-.card-3 {
-    display: none;
-}
-
 .slider__btn--desktop {
     display: none;
     flex-shrink: 0;
@@ -424,6 +419,19 @@
     .slider__line {
         gap: 90px;
     }
+}
+
+/* === CAROUSEL ANIMATION === */
+.slider__line {
+    overflow: hidden;
+    position: relative;
+}
+
+.slider__track {
+    display: flex;
+    gap: inherit;
+    transition: transform 0.4s ease;
+    will-change: transform;
 }
 
 /* === HELP === */

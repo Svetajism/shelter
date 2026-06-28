@@ -17,7 +17,6 @@
 
     <script src="scripts/main.js" type="module"></script>
     <script src="scripts/burger.js" defer></script>
-    <script src="scripts/popup.js" defer></script>
 </head>
 
 
@@ -68,71 +67,7 @@
                 <h2 class="visually-hidden">Pets</h2>
                 <div class="page">
 
-                    <div class="page__cards">
-                        <!-- <div class="card card-1__pets">
-                            <img class="card__image" src="assets/images/pets-katrine.png" alt="A dog">
-                            <div class="card__content">
-                                <h3>Katrine</h3>
-                                <a class="btn-secondary">Learn more</a>
-                            </div>
-                        </div>
-
-                        <div class="card card-2__pets">
-                            <img class="card__image" src="assets/images/pets-jennifer.png" alt="A dog">
-                            <div class="card__content">
-                                <h3>Jennifer</h3>
-                                <a class="btn-secondary">Learn more</a>
-                            </div>
-                        </div>
-
-                        <div class="card card-3__pets">
-                            <img class="card__image" src="assets/images/pets-woody.png" alt="A dog">
-                            <div class="card__content">
-                                <h3>Woody</h3>
-                                <a class="btn-secondary">Learn more</a>
-                            </div>  
-                        </div>
-
-                        <div class="card card-4__pets">
-                            <img class="card__image" src="assets/images/pets-sofia.png" alt="A dog">
-                            <div class="card__content">
-                                <h3>Sophia</h3>
-                                <a class="btn-secondary">Learn more</a>
-                            </div>  
-                        </div>
-
-                        <div class="card card-5__pets">
-                            <img class="card__image" src="assets/images/pets-timmy.png" alt="A dog">
-                            <div class="card__content">
-                                <h3>Timmy</h3>
-                                <a class="btn-secondary">Learn more</a>
-                            </div>  
-                        </div>
-
-                        <div class="card card-6__pets">
-                            <img class="card__image" src="assets/images/pets-charly.png" alt="A dog">
-                            <div class="card__content">
-                                <h3>Charly</h3>
-                                <a class="btn-secondary">Learn more</a>
-                            </div>  
-                        </div>
-
-                        <div class="card card-7__pets">
-                            <img class="card__image" src="assets/images/pets-scarlet.png" alt="A dog">
-                            <div class="card__content">
-                                <h3>Scarlett</h3>
-                                <a class="btn-secondary">Learn more</a>
-                            </div>  
-                        </div>
-
-                        <div class="card card-8__pets">
-                            <img class="card__image" src="assets/images/pets-freddie.png" alt="A dog">
-                            <div class="card__content">
-                                <h3>Freddie</h3>
-                                <a class="btn-secondary">Learn more</a>
-                            </div>  
-                        </div> -->
-                    </div>
+                    <div class="page__cards"></div>
 
                     <div class="page__controls">
 
@@ -202,6 +137,45 @@
         </div>
 
     </footer>
+
+    <div class="popup-overlay" id="popupOverlay" aria-hidden="true">
+    <div class="popup" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+
+        <button class="popup__close" type="button" aria-label="Close popup">
+            <img src="assets/icons/cross.svg" alt="" aria-hidden="true">
+        </button>
+
+        <div class="popup__content">
+            <img class="popup__img" src="" alt="">
+
+            <div class="popup__info">
+                <h3 class="popup__title modal__title" id="popupTitle"></h3>
+                <p class="popup__subtitle modal__subtitle"></p>
+                <p class="popup__description modal__pet-description"></p>
+
+                <ul class="popup__details">
+                    <li>
+                        <span class="modal__label">Age: </span>
+                        <span class="modal__value popup__age"></span>
+                    </li>
+                    <li>
+                        <span class="modal__label">Inoculations: </span>
+                        <span class="modal__value popup__inoculations"></span>
+                    </li>
+                    <li>
+                        <span class="modal__label">Diseases: </span>
+                        <span class="modal__value popup__diseases"></span>
+                    </li>
+                    <li>
+                        <span class="modal__label">Parasites: </span>
+                        <span class="modal__value popup__parasites"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
     
 </body>
 </html>

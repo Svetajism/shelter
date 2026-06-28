@@ -1,6 +1,4 @@
-// функция загрузки массива питомцев
-
-export async function fetchPets() {
+export async function getPets() {
     try {
         const response = await fetch('./pets.json');
         
