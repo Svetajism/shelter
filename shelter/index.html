@@ -15,12 +15,9 @@
     <meta name="apple-mobile-web-app-title" content="MyWebSite">
     <link rel="manifest" href="favicon/site.webmanifest">
 
-    <script src="scripts/main.js" defer></script>
+    <script src="scripts/main.js" type="module"></script>
     <script src="scripts/burger.js" defer></script>
-    <script src="scripts/carousel.js" defer></script>
     <script src="scripts/popup.js" defer></script>
-    <script src="scripts/api.js" defer></script>
-    <script src="scripts/utils.js" defer></script>
 </head>
 <body>
     <div class="home-screen">
@@ -71,7 +68,6 @@
 
                 <img class="hero__image" src="assets/images/start-screen-puppy.png" alt="A dog">
         </section>
-
     </div>
     
 
@@ -97,31 +93,7 @@
                         <img src="assets/icons/arrow-left.svg" alt="" aria-hidden="true">
                     </button>
 
-                    <div class="slider__line">
-                        <div class="card card-1">
-                            <img class="card__image" src="assets/images/pets-katrine.png" alt="A dog">
-                            <div class="card__content">
-                                <h3>Katrine</h3>
-                                <a class="btn-secondary">Learn more</a>
-                            </div>
-                        </div>
-
-                        <div class="card card-2">
-                            <img class="card__image" src="assets/images/pets-jennifer.png" alt="A dog">
-                            <div class="card__content">
-                                <h3>Jennifer</h3>
-                                <a class="btn-secondary">Learn more</a>
-                            </div>
-                        </div>
-
-                        <div class="card card-3">
-                            <img class="card__image" src="assets/images/pets-woody.png" alt="A dog">
-                            <div class="card__content">
-                                <h3>Woody</h3>
-                                <a class="btn-secondary">Learn more</a>
-                            </div>  
-                        </div>
-                    </div>
+                    <div class="slider__line"></div>
 
                     <button class="slider__btn slider__btn--desktop" type="button" aria-label="Next slide">
                         <img src="assets/icons/arrow-right.svg" alt="" aria-hidden="true">

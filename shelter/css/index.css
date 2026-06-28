@@ -421,6 +421,19 @@
     }
 }
 
+/* === CAROUSEL ANIMATION === */
+.slider__line {
+    overflow: hidden;
+    position: relative;
+}
+
+.slider__track {
+    display: flex;
+    gap: inherit;
+    transition: transform 0.4s ease;
+    will-change: transform;
+}
+
 /* === HELP === */
 .help {
     display: flex;

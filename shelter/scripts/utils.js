@@ -24,5 +24,17 @@ function hasAdjacentDuplicates(arr) {
   return false;
 }
 
-const utils = 'utils'
-console.log(utils)
+// CAROUSEL
+export function shuffled(arr) {
+    const copy = [...arr]; // не мутируем оригинал
+    shuffle(copy);         // shuffle уже есть — используем его
+    return copy;
+}
+
+export function debounce(fn, delay) {
+    let timer;
+    return function(...args) {
+        clearTimeout(timer);
+        timer = setTimeout(() => fn(...args), delay);
+    };
+}
