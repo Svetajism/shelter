@@ -93,15 +93,40 @@ function bindControls() {
   });
 }
 
+// function updateControls() {
+//   const total = getTotalPages();
+//   const isFirst = state.currentPage === 1;
+//   const isLast = state.currentPage === total;
+
+//   document.querySelector('.page__btn-first').disabled = isFirst;
+//   document.querySelector('.page__btn-prev').disabled = isFirst;
+//   document.querySelector('.page__btn-next').disabled = isLast;
+//   document.querySelector('.page__btn-last').disabled = isLast;
+//   document.querySelector('.page__number').textContent = state.currentPage;
+// }
+
+
 function updateControls() {
   const total = getTotalPages();
   const isFirst = state.currentPage === 1;
   const isLast = state.currentPage === total;
 
-  document.querySelector('.page__btn-first').disabled = isFirst;
-  document.querySelector('.page__btn-prev').disabled = isFirst;
-  document.querySelector('.page__btn-next').disabled = isLast;
-  document.querySelector('.page__btn-last').disabled = isLast;
+  const btnFirst = document.querySelector('.page__btn-first');
+  const btnPrev  = document.querySelector('.page__btn-prev');
+  const btnNext  = document.querySelector('.page__btn-next');
+  const btnLast  = document.querySelector('.page__btn-last');
+
+  // classList.toggle(class, condition) — добавляет класс если true, убирает если false
+  btnFirst.classList.toggle('page__btn-inactive', isFirst);
+  btnPrev.classList.toggle('page__btn-inactive', isFirst);
+  btnNext.classList.toggle('page__btn-inactive', isLast);
+  btnLast.classList.toggle('page__btn-inactive', isLast);
+
+  btnFirst.disabled = isFirst;
+  btnPrev.disabled  = isFirst;
+  btnNext.disabled  = isLast;
+  btnLast.disabled  = isLast;
+
   document.querySelector('.page__number').textContent = state.currentPage;
 }
 
@@ -114,6 +139,3 @@ function render() {
     container.classList.remove('fade-out');
   }, 300);
 }
-
-const pagination = 'pagination'
-console.log(pagination)
