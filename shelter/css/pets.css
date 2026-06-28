@@ -132,13 +132,6 @@
     gap: 30px;
 }
 
-/* .card-4__pets,
-.card-5__pets,
-.card-6__pets,
-.card-7__pets,
-.card-8__pets {
-    display: none;
-} */
 
 @media (min-width: 768px) {
     .pets {
@@ -154,11 +147,6 @@
         gap: 30px 40px;
         width: 100%;
     }
-    /* .card-4__pets,
-    .card-5__pets,
-    .card-6__pets {
-        display: flex;
-    } */
 }
 
 
